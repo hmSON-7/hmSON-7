@@ -8,7 +8,7 @@
 - **2025.07 - 현재**: Samsung SW/AI Academy for Youth 14기
 
 ## 📊 GitHub Stats  
-![hmSON-7's GitHub Stats](https://github-readme-stats.vercel.app/api?username=hmSON-7&show_icons=true&theme=cobalt)
+![hmSON-7's GitHub Stats](./assets/github-stats.svg)
 
 ## 🏆 Solved.ac  
 <div style="display:flex; gap:1rem; align-items:center;">
