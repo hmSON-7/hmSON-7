@@ -1,0 +1,38 @@
+name: Update GitHub Stats SVG
+
+on:
+  schedule:
+    # 매일 03:30 UTC = 한국시간(KST) 12:30
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create assets dir
+        run: mkdir -p assets
+
+      - name: Download GitHub Readme Stats SVG
+        run: |
+          curl -L --fail --retry 5 --retry-delay 3 \
+            "https://github-readme-stats.vercel.app/api?username=hmSON-7&show_icons=true&theme=cobalt" \
+            -o assets/github-stats.svg
+
+      - name: Commit & push if changed
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-stats.svg
+          git commit -m "chore: update github stats svg"
+          git push
