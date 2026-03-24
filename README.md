@@ -6,7 +6,8 @@
 - **2023.03 – 2025.02**: 전주대 정보통신지원실 근로장학
 - **2024.09.10**: - 정보처리기사 자격증 취득
 - **2025.07 - 현재**: Samsung SW/AI Academy for Youth 14기
-- **2026.03.18**: Samsung SW 역량테스트 B형 검정 합격
+- **2026.03.18**: Samsung SW 역량테스트 B형 검정 합격(유효 2년)
+- **2026.03.27**: 한국데이터산업진흥원 SQLD 합격(유효 2년)
 
 ## 📊 GitHub Stats  
 ![hmSON-7's GitHub Stats](https://github-readme-stats.vercel.app/api?username=hmSON-7&show_icons=true&theme=cobalt)
